@@ -13,6 +13,7 @@ public class Contacts extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.contacts);
 
         String[] contact = {"Sandeep                 select \n(122)-253-6655","Tilak                           select \n (254) 435-6546","Anil                          select \n (254) 643-6546","Raghu                       select\n (837) 924-6546"};
@@ -22,7 +23,7 @@ public class Contacts extends AppCompatActivity {
 
 
         // Setting the adapter to listview
-        lstContacts.setAdapter(contAdapter);
+             lstContacts.setAdapter(contAdapter);
 //        lstContacts.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 
         lstContacts.setOnItemClickListener(new AdapterView.OnItemClickListener(){
