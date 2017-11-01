@@ -36,9 +36,7 @@ public class Register extends AppCompatActivity {
 
 
 
-
-
-
+        
         if (firstName.getText().toString().trim().equals("")) {
             firstName.setError("First name is required!");
         }
