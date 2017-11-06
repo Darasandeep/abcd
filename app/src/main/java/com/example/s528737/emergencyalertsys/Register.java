@@ -1,4 +1,4 @@
-//created by Tilak Dhulipalla
+//created by Tilak Dhulipalla and raghavender
 package com.example.s528737.emergencyalertsys;
 
 import android.content.Intent;
@@ -36,7 +36,7 @@ public class Register extends AppCompatActivity {
 
 
 
-        
+
         if (firstName.getText().toString().trim().equals("")) {
             firstName.setError("First name is required!");
         }

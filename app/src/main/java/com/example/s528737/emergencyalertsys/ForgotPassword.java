@@ -1,4 +1,4 @@
-//created by Tilak Dhulipalla
+//created by raghavender jarupati
 package com.example.s528737.emergencyalertsys;
 
 import android.content.Intent;

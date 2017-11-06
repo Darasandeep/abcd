@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-
+//Created by Sandeep Dara
 public class AppContacts extends AppCompatActivity {
 
     @Override
