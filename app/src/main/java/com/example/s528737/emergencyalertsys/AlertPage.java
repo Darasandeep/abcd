@@ -20,30 +20,26 @@ public class AlertPage extends AppCompatActivity {
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
     }
+    public void contactsPage(View v){
 
-    public void contactsPage(View v) {
-
-        Intent contacts = new Intent(this, AppContacts.class);
+        Intent contacts= new Intent(this,AppContacts.class);
         startActivity(contacts);
 
-    }
+            }
 
-    public void toFeedback1(View v) {
-        Intent emer1 = new Intent(this, Feedback.class);
+    public void toFeedback1(View v){
+        Intent emer1= new Intent(this,Feedback.class);
         startActivity(emer1);
     }
-
-    public void toFeedback2(View v) {
-        Intent emer2 = new Intent(this, Feedback.class);
+    public void toFeedback2(View v){
+        Intent emer2= new Intent(this,Feedback.class);
         startActivity(emer2);
     }
-
-    public void toFeedback3(View v) {
-        Intent emer3 = new Intent(this, Feedback.class);
+    public void toFeedback3(View v){
+        Intent emer3 = new Intent(this,Feedback.class);
         startActivity(emer3);
     }
-
-    //    public void toLogout(View v){
+//    public void toLogout(View v){
 //        Toast.makeText(getApplicationContext(),"Logout Succesful",Toast.LENGTH_SHORT).show();
 //        Intent logout = new Intent(this,Login.class);
 //        startActivity(logout);
@@ -54,4 +50,25 @@ public class AlertPage extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.sign_out) {
+
+            Intent ini = new Intent(this, Login.class);
+            startActivity(ini);
+            Toast.makeText(getApplicationContext(),"successful Logout ",Toast.LENGTH_SHORT).show();
+
+        }
+
+
+        return super.onOptionsItemSelected(item);
+
+
+    }
 }
