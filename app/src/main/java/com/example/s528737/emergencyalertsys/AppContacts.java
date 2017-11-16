@@ -16,11 +16,10 @@ public class AppContacts extends AppCompatActivity {
         setContentView(R.layout.activity_app_contacts);
     }
 
-public void Implicit(View v)
-{
-//                Intent intent= new Intent(this,Contacts.class);
-//              startActivity(intent);
-//
+public void Implicit(View v) {
+    Intent intent = new Intent(this, Contacts.class);
+    startActivity(intent);
+}
     public void groupManger(View v)
     {
         Intent intent= new Intent(this, Contacts.class);
