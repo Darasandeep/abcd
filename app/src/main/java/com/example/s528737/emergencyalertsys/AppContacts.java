@@ -1,5 +1,6 @@
 package com.example.s528737.emergencyalertsys;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
@@ -17,10 +18,9 @@ public class AppContacts extends AppCompatActivity {
 
 public void Implicit(View v)
 {
-                Intent intent= new Intent(this,Contacts.class);
-              startActivity(intent);
-}
-
+//                Intent intent= new Intent(this,Contacts.class);
+//              startActivity(intent);
+//
     public void groupManger(View v)
     {
         Intent intent= new Intent(this, Contacts.class);
