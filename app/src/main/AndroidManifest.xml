@@ -28,7 +28,8 @@
         <activity android:name=".ForgotPassword" />
         <activity android:name=".AppContacts" />
         <activity android:name=".ContactGroups" />
-        <activity android:name=".Contacts"></activity>
+        <activity android:name=".Contacts" />
+        <activity android:name=".DatabaseOpenHelper"></activity>
     </application>
 
 </manifest>

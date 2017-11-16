@@ -1,3 +1,4 @@
+//created by Tilak Dhulipalla and raghavender
 package com.example.s528737.emergencyalertsys;
 
 import android.content.Intent;
@@ -32,8 +33,6 @@ public class Register extends AppCompatActivity {
 //        RadioButton radioButton = (RadioButton) findViewById(R.id.radioEmployr);
 //        radioGroup2 = (RadioGroup) findViewById(R.id.gender);
 //        RadioButton radioButton1 = (RadioButton) findViewById(R.id.radioFemale);
-
-
 
 
 

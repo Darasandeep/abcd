@@ -1,3 +1,4 @@
+//created by raghavender jarupati
 package com.example.s528737.emergencyalertsys;
 
 import android.content.Intent;
@@ -21,7 +22,6 @@ public class ForgotPassword extends AppCompatActivity {
 //        TextView tv = (TextView) findViewById(R.id.textView12);
 //        tv.setText("Password reset successfully");
 //    }
-
 //    public void resetbutton(View v){
 //        Intent ini = new Intent(this,Login.class);
 //        startActivity(ini);
