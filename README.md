@@ -1,6 +1,7 @@
 Please find the document named Personal Emergency Alert System updated
- Team members
-Sandeep Kumar Dara
+
+ Team members:
+ Sandeep Kumar Dara
  Raghavender Jarupati
  Anil seshu kumar Akula
  Tilak Dhulipalla
