@@ -90,7 +90,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return contactList;
     }
 
-     
+    public void deleteContact2(int id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_CONTACTS, KEY_ID + " = ?",
+                new String[] { String.valueOf(id) });
+        db.close();
+    }
+
+
 
     public int updateContact2(int id, String Name, String PhoneNumber) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -105,13 +112,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
 
-    
-    public void deleteContact2(int id) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(TABLE_CONTACTS, KEY_ID + " = ?",
-                new String[] { String.valueOf(id) });
-        db.close();
-    }
+
 
      
 
