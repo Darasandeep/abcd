@@ -91,7 +91,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
      
-    
+
     public int updateContact2(int id, String Name, String PhoneNumber) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -105,14 +105,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
 
-     
-    public void deleteContact(Contact contact) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(TABLE_CONTACTS, KEY_ID + " = ?",
-                new String[] { String.valueOf(contact.getID()) });
-        db.close();
-    }
-
+    
     public void deleteContact2(int id) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_CONTACTS, KEY_ID + " = ?",
