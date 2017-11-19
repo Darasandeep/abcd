@@ -144,7 +144,33 @@ public class SecondActivity extends Activity {
 
                     }
 
-   
+                    Log.d("Dislaying: ", "Displaying all contacts..");
+                    List<Contact> contactsd = db.getAllContacts();
+                    count = 0;
+                    for (Contact cn : contactsd) {
+                        log = "Id: " + cn.getID() + " ,Name: " + cn.getName() + " ,Phone: " + cn.getPhoneNumber() + "Count: " + count;
+                        String NameNumber = null;
+                        NameNumber = cn.getName() + " : " + cn.getPhoneNumber();
+                        String ll = "" + count;
+                        Log.d("Name: ", log);
+
+                        if (count == 0)
+                            t.setText(NameNumber);
+                        else if (count == 1)
+                            t1.setText(NameNumber);
+                        else if (count == 2)
+                            t2.setText(NameNumber);
+                        else if (count == 3)
+                            t3.setText(NameNumber);
+
+                        count++;
+
+                    }
+                }
+            }
+
+        });
+
 
         btnupdate = (Button) findViewById(R.id.button2);
 
