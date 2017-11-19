@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/abc"
-    tools:context="com.example.s528737.emergencyalertsys.Register">
+    tools:context="com.example.s528737.emeralertsys.Register">
 
     <TextView
         android:id="@+id/textView5"
@@ -48,6 +48,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:text="Mobile Number"
+        android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintLeft_toLeftOf="parent"
