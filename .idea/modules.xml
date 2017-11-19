@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../../s528738/Documents/Android/emergencyalertsystem/app/app.iml" filepath="$PROJECT_DIR$/../../../../s528738/Documents/Android/emergencyalertsystem/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:/../../s528738/Documents/Android/emergencyalertsystem/app/app.iml" filepath="C:/../../s528738/Documents/Android/emergencyalertsystem/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/emergencyalertsystem.iml" filepath="$PROJECT_DIR$/emergencyalertsystem.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../../s528738/Documents/Android/emergencyalertsystem/emergencyalertsystem.iml" filepath="$PROJECT_DIR$/../../../../s528738/Documents/Android/emergencyalertsystem/emergencyalertsystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emergencyalertsystem.iml" filepath="$PROJECT_DIR$/emergencyalertsystem.iml" />
+      <module fileurl="file://C:/../../s528738/Documents/Android/emergencyalertsystem/emergencyalertsystem.iml" filepath="C:/../../s528738/Documents/Android/emergencyalertsystem/emergencyalertsystem.iml" />
     </modules>
   </component>
 </project>
