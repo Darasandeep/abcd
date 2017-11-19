@@ -21,11 +21,7 @@ public class Contact extends Activity {
     }
 
 
-    public Contact(String name, String _phone_number){
-        this._name = name;
-        this._phone_number = _phone_number;
-    }
-
+   
     public int getID(){
         return this._id;
     }
