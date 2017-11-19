@@ -39,11 +39,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.execSQL(CREATE_CONTACTS_TABLE);
     }
 
-     
-   
+    @Override
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+
+    }
 
 
-     
     void addContact(Contact contact) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -57,29 +58,44 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
 
+    Contact getContact(int id) {
+        SQLiteDatabase db = this.getReadableDatabase();
 
-     
+        Cursor cursor = db.query(TABLE_CONTACTS, new String[] { KEY_ID,
+                        KEY_NAME, KEY_PH_NO }, KEY_ID + "=?",
+                new String[] { String.valueOf(id) }, null, null, null, null);
+        if (cursor != null)
+            cursor.moveToFirst();
+
+        Contact contact = new Contact(Integer.parseInt(cursor.getString(0)),
+                cursor.getString(1), cursor.getString(2));
+
+        return contact;
+    }
+
+
+
     public List<Contact> getAllContacts() {
         List<Contact> contactList = new ArrayList<Contact>();
-         
+
         String selectQuery = "SELECT  * FROM " + TABLE_CONTACTS;
 
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
 
-         
+
         if (cursor.moveToFirst()) {
             do {
                 Contact contact = new Contact();
                 contact.setID(Integer.parseInt(cursor.getString(0)));
                 contact.setName(cursor.getString(1));
                 contact.setPhoneNumber(cursor.getString(2));
-                 
+
                 contactList.add(contact);
             } while (cursor.moveToNext());
         }
 
-         
+
         return contactList;
     }
 
