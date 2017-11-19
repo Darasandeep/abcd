@@ -7,6 +7,8 @@ Sandeep Kumar Dara
 
  Test Credentials:
  Register and login using the credentials given by you
+ 
+ Test:
  Username: dara@gmail.com
  password:bunty
 
