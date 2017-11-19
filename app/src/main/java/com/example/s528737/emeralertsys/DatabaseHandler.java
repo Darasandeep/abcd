@@ -1,5 +1,6 @@
 package com.example.s528737.emeralertsys;
 
+import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -39,15 +40,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
      
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-         
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_CONTACTS);
-
-         
-        onCreate(db);
-    }
-
+   
 
 
      

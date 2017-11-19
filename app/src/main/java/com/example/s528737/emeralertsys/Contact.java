@@ -1,6 +1,8 @@
 package com.example.s528737.emeralertsys;
 
-public class Contact {
+import android.app.Activity;
+
+public class Contact extends Activity {
 
 
     int _id;
