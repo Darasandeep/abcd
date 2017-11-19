@@ -54,7 +54,7 @@ public class Login extends AppCompatActivity {
                     DataQueryBuilder query = DataQueryBuilder.create();
                     String value="Email='"+emailID+"'";
                     query.setWhereClause(value);
-                    Log.d("where condition",""+value);
+                    Log.d("condition",""+value);
                     userStorage.find(query, new AsyncCallback<List<RegisterInfo>>() {
 
                         @Override
@@ -62,7 +62,7 @@ public class Login extends AppCompatActivity {
 //                            Log.d("Printing : ", "user Details: " + response);
 
                             String test = response.toString();
-                            Log.d("Printing : ", "user test: " + test);
+                            Log.d("print : ", "user test: " + test);
                             if ((test.contains(emailID) && test.contains(passcode))) {
                                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                                 startActivity(i);
